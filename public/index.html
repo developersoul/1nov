@@ -34,9 +34,8 @@
 
 </nav>
 
-<section class="row">
+<section class="row" id="hero" data-parallax="scroll" data-image-src="/images/place_1.jpg">
   <div class="hero col-xs-12">
-    <img src="/images/place_1.jpg" alt="">
     <div class="hero-block">
       <h1>PAU & ALE</h1>
       <h2>1 NOVIEMBRE</h2>
@@ -45,7 +44,7 @@
   </div>
 </section>
 
-<section class="container" id="timeline">
+<section class="row" id="timeline">
   <h2>NUESTRA HISTORIA</h2>
   <div class="timeline">
     <ul>
@@ -59,19 +58,29 @@
   </div>
 </section>
 
-<section class="container" id="credo">
-  <h2>NUESTRO CREDO</h2>
+<section class="row" id="credo" data-parallax="scroll" data-image-src="/images/credo.jpeg">
+<div class="container">
+    <h2>NUESTRO CREDO</h2>
   <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cJr1QVwnbNM" frameborder="0" allowfullscreen></iframe>
   </div>
-</section>
-<section class="container" id="place">
-   <h2>EL LUGAR</h2>
-   <div id="instafeed"></div>
+</div>
+
 </section>
 
-<section class="container" id="gettingHere">
+<section class="row" id="place">
+<div class="container">
+   <h2>EL LUGAR</h2>
+   <div id="instafeed"></div>
+</div>
+
+</section>
+
+<section class="row" id="gettingHere" data-parallax="scroll" data-image-src="/images/place_3.jpg">
+<div class="container">
   <h2>COMO LLEGAR</h2>
   <div id="map"></div>
+</div>
+
 </section>
 
 <section class="container" id="confirmation">
@@ -96,7 +105,10 @@
 <script src="/js/instafeed.min.js"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script src="/js/gmaps.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/js/parallax.min.js"></script>
 <script>
+
   var feed = new Instafeed({
         get: 'user',
         userId: 306275884,
@@ -130,6 +142,7 @@
   strokeOpacity: 0.9,
   strokeWeight: 5
 });
+
 </script>
 </body>
 </html>
