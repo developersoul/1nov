@@ -8,10 +8,11 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+<nav class="navbar navbar-fixed-top navbar-light hidden">
   <a class="navbar-brand" href="#"><b>PAU & ALE</b> 1NOVIEMBRE</a>
   <div class="container">
     <ul class="nav navbar-nav pull-right">
@@ -35,7 +36,7 @@
 
 </nav>
 
-<section class="row" id="hero" data-parallax="scroll" data-image-src="/images/place_1.jpg">
+<section class="row" id="hero" data-parallax="scroll" data-image-src="images/place_1.jpg">
   <div class="hero col-xs-12">
     <div class="hero-block">
       <h1>PAU & ALE</h1>
@@ -45,40 +46,60 @@
   </div>
 </section>
 
-<section class="row" id="timeline">
+<section class="row wow bounceInDown" id="timeline">
   <h2>NUESTRA HISTORIA</h2>
-  <div class="timeline">
-    <ul>
-      <li>2008/sept Myspace</li>
-      <li>2008/nov Nos vimos por primera vez</li>
-      <li>2008/dic Nuestro primer beso / novios</li>
-      <li>2009/may Nos fuimos a vivir a BA</li>
-      <li>2013 volvimos a CO</li>
-      <li>2015/sep nos comprometimos</li>
+    <ul class="timeline">
+      <li>
+        <div class="date">2008 Sept</div>
+        <div class="title">Myspace</div>
+        <div class="text">Pau acepto la invitación de Ale y hay todo empezo.</div>
+      </li>
+      <li>
+        <div class="date">2008 Nov</div>
+        <div class="title">Nos vimos por primera vez</div>
+        <div class="text">Trabajamos como extras en una novela que nunca salio al aire.</div>
+      </li>
+      <li>
+        <div class="date">2008 Dic</div>
+        <div class="title">Nuestro primer beso / novios</div>
+        <div class="text">El día en que Ale le dijo que fueran novios se dieron su primer beso.</div>
+      </li>
+      <li>
+        <div class="date">2009 May</div>
+        <div class="title">Nos fuimos a vivir a BA</div>
+        <div class="text">Pau se fue primero porque ya tenia todo arreglado cuando se conocieron a los dos meses Ale llegó.</div>
+      </li>
+      <li>
+        <div class="date">2013 Ene</div>
+        <div class="title">Volvimos a CO</div>
+        <div class="text">Despues de haber estudiado sus respectivas carreras se devolvieron.</div>
+      </li>
+      <li>
+        <div class="date">2015 Sep</div>
+        <div class="title">Nos comprometimos</div>
+        <div class="text">Bajo las estrellas y el sonido del mar</div>
+      </li>
     </ul>
+</section>
+
+<section class="row wow fadeIn" id="credo" data-parallax="scroll" data-image-src="/images/credo.jpeg">
+  <div class="container">
+      <h2 class="title-white">NUESTRO CREDO</h2>
+    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cJr1QVwnbNM" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
-<section class="row" id="credo" data-parallax="scroll" data-image-src="/images/credo.jpeg">
-<div class="container">
-    <h2>NUESTRO CREDO</h2>
-  <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cJr1QVwnbNM" frameborder="0" allowfullscreen></iframe>
+<section class="row wow fadeIn" id="place">
+  <div class="container">
+     <h2>EL LUGAR</h2>
+     <div id="instafeed"></div>
   </div>
-</div>
-
 </section>
 
-<section class="row" id="place">
+<section class="row wow fadeInDown" id="gettingHere" data-parallax="scroll" data-image-src="/images/place_3.jpg">
 <div class="container">
-   <h2>EL LUGAR</h2>
-   <div id="instafeed"></div>
-</div>
-
-</section>
-
-<section class="row" id="gettingHere" data-parallax="scroll" data-image-src="/images/place_3.jpg">
-<div class="container">
-  <h2>COMO LLEGAR</h2>
+  <h2 class="title-white">COMO LLEGAR</h2>
   <div id="map"></div>
 </div>
 
@@ -87,29 +108,44 @@
 <section class="container" id="confirmation">
   <h2>CONFIRMACIÓN</h2>
   <form action="#" class="form">
-    <div class="form-group">
+    <div class="form-group col-sm-6">
     <label for="">Nombre Completo</label>
       <input type="text" class="form-control">
     </div>
-    <div class="form-group">
+
+    <div class="form-group col-sm-6">
     <label for="">Email</label>
       <input type="text" class="form-control">
     </div>
-    <div class="form-group">
+
+    <div class="form-group col-sm-6">
     <label for="">Teléfono</label>
       <input type="text" class="form-control">
     </div>
-    <button class="btn btn-primary-outline">Confirmar</button>
+
+    <div class="form-group col-sm-6">
+      <label for="">&nbsp;</label>
+        <button class="btn btn-primary-outline" style="width: 100%; text-transform: uppercase">Enviar Confirmación</button>
+    </div>
+
   </form>
 </section>
+<section class="row">
+<div class="container" style="text-align: center">
+  <h2>#PAU&ALE</h2>
+  <p>Nuestro hashtag<p>
+</div>
 
+</section>
 <script src="/js/instafeed.min.js"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script src="/js/gmaps.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="/js/parallax.min.js"></script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
+<script>
+  new WOW().init();
   var feed = new Instafeed({
         get: 'user',
         userId: 306275884,
