@@ -50,11 +50,12 @@ h5 {
   background: $green;
   color: #fff;
   border: none;
-  &:hover {
+  &:hover, &:focus {
     background: $green;
     border-color: $green;
     color: #fff;
   }
+
 }
 
 .hero {
