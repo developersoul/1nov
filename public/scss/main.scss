@@ -1,3 +1,6 @@
+$green: #87CEBB;
+$pink: #CD5875;
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -12,6 +15,14 @@ h5 {
 
 .navbar-light {
   background: rgba(255, 255, 255, .9);
+}
+
+.nav-link {
+  color: #777;
+}
+
+.title-pink {
+  color: $pink;
 }
 
 .hero {
@@ -55,6 +66,7 @@ h5 {
   }
 }
 
+
 .title-white {
   color: #fff;
 }
@@ -90,7 +102,9 @@ section {
     margin-left: -1.5px;
     font-family: "fontAwesome";
     z-index: 10;
+    color: $pink;
   }
+
   &:after {
     position: absolute;
     bottom: -15px;
@@ -100,6 +114,7 @@ section {
     margin-left: -1.5px;
     font-family: "fontAwesome";
     z-index: 10;
+    color: $pink;
   }
 
   li {
