@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <title>PAU & ALE 1NOVIEMBRE</title>
   <link rel="stylesheet" href="/css/bootstrap.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
@@ -108,7 +107,7 @@
 
 <section class="container" id="confirmation">
   <h2>CONFIRMACIÓN</h2>
-  <form action="#" class="form">
+  <form action="#" class="form form-confirmation">
     <div class="form-group col-sm-12">
     <label for="">Nombres Completos</label>
       <input type="text" class="form-control">
@@ -146,6 +145,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script>
+  $('.form-confirmation').on('submit', function(e) {
+    e.preventDefault();
+    console.log(e);
+  });
   new WOW().init();
   var feed = new Instafeed({
         get: 'user',
