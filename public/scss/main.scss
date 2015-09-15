@@ -31,9 +31,11 @@ h5 {
 
 .btn-green {
   border-color: $green;
+  color: $green;
   &:hover {
     background: $green;
     border-color: $green;
+    color: $green;
   }
 }
 
