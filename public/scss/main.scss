@@ -21,6 +21,23 @@ h5 {
   color: #777;
 }
 
+.form-group {
+  color: $green;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.shadow {
+  text-shadow: 1px 1px 2px #333;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, .8);
+  border: none;
+  &:focus {
+    border: none;
+  }
+}
+
 .title-pink {
   color: $pink;
 }
@@ -30,8 +47,9 @@ h5 {
 }
 
 .btn-green {
-  border-color: $green;
-  color: $green;
+  background: $green;
+  color: #fff;
+  border: none;
   &:hover {
     background: $green;
     border-color: $green;
