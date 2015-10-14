@@ -13,7 +13,7 @@
 <body>
 
 <nav class="navbar navbar-fixed-top navbar-light hidden">
-  <a class="navbar-brand" href="#"><b>PAU & ALE</b> 1NOVIEMBRE</a>
+  <a class="navbar-brand title-green" href="#"><b>PAU & ALE</b> 1NOV</a>
   <div class="container">
     <ul class="nav navbar-nav pull-right">
     <li class="nav-item">
@@ -42,7 +42,7 @@
 <section class="row" id="hero" data-parallax="scroll" data-image-src="images/place_1.jpg">
   <div class="hero col-xs-12">
     <div class="hero-block">
-      <h1>PAU & ALE</h1>
+      <h1>PAU& ALE</h1>
       <h2>1 NOVIEMBRE</h2>
       <a href="#confirmation" class="btn btn-secondary-outline action">Click aquí para confirmar</a>
     </div>
@@ -85,7 +85,7 @@
     </ul>
 </section>
 
-<section class="row wow fadeIn" id="credo" data-parallax="scroll" data-image-src="/images/credo.jpeg">
+<section class="row wow fadeIn" id="credo" data-parallax="scroll" data-image-src="/images/credo.jpg">
   <div class="container">
       <h2 class="title-white">NUESTRO CREDO</h2>
     <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cJr1QVwnbNM" frameborder="0" allowfullscreen></iframe>
@@ -147,6 +147,7 @@
   <div class="container" style="text-align: center">
     <h1 class="title-pink">#1NOVPAUYALE</h1>
     <h3><i class="fa fa-instagram"></i> Nuestro hashtag<h3>
+    <div id="instafeed2"></div>
   </div>
 </section>
 
@@ -168,7 +169,7 @@
 <section class="row">
   <div class="container" style="text-align: center">
     <h2>Nota importante</h2>
-    <h4>Prohibida la entrada en jean</h4>
+    <h4>Hace bastante frío, irse bien abrigados!</h4>
   </div>
 </section>
 
@@ -213,6 +214,7 @@
 
     new WOW().init();
     var feed = new Instafeed({
+          target: "instafeed",
           get: 'user',
           userId: 306275884,
           accessToken: '451287488.cf0499d.30fadac226e84845986b2dc6385926e0',
@@ -220,6 +222,15 @@
           limit: 28
       });
       feed.run();
+
+    var feed2 = new Instafeed({
+      target: "instafeed2",
+        get: 'tagged',
+        tagName: '1novpauyale',
+        clientId: '37e4cbeadf0e457f8ce86ded3e6ce890'
+    });
+
+    feed2.run();
 
     var map =new GMaps({
       div: '#map',
